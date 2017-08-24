@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [UOS 4.0介绍](book/UOS 4.0介绍.md)
+* [UOS4.0介绍](book/UOS4.0介绍.md)
 * [快速入门](book/快速入门.md)
   * [组建简单私有网络](book/快速入门/组建简单私有网络.md)
   * [快速创建云主机](book/快速入门/快速创建云主机.md)
