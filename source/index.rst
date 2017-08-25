@@ -11,7 +11,6 @@ Welcome to UOS4.0's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    README
    book/UOS4.0介绍
@@ -28,5 +27,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
