@@ -1,0 +1,63 @@
+4.5 配置管理
+------------
+
+此配置管理功能与4.1.3节的配置管理大不相同，该配置管理功能主要用于对UOS控制台的页面的展示。
+
+\| **名称** \| **应用** \|\ **类型**\ \|\ **值**\ \| **详细信息** \| \|
+:-----------------------: \| :--------: \| :--- : \| :--: \|
+:---------------------: \| \|auth\_logo\_url \| auth \| string
+\|/static/assets/login/logo@2x.png\|登录、注册界面 - logo 地址\|
+\|single\_logo\_url \| auth \| string
+\|/static/assets/nav\_logo.png\|提示信息页面 - logo 地址\| \|company \|
+auth \| string \|©2016 UnitedStack Inc. All Rights Reserved.
+京ICP备13015821号\|登录界面-公司 copyright\| \|corporation\_name \| auth
+\| string \|UnitedStack 有云\|登录界面-公司名称\| \|enable\_domain \|
+auth \| boolean\| true \|登录界面-支持多 domain 功能\| \|eula\_content
+\| auth \| string \| \|注册页面-用户协议页面地址\|
+\|enable\_login\_captcha \| auth \| boolean\|
+false\|登录页面图形验证码\| \|default\_domain \| auth \| string
+\|Default\|登录界面-选中默认 domain 功能\| \|enable\_register \| global
+\| boolean\| false\|开启注册功能\| \|enable\_calamari \| global \|
+boolean\| false\|开启 ceph 面板功能\| \|enable\_ticket \| global \|
+boolean\| true \|开启工单功能\| \|enable\_approval \| global \|
+boolean\| true \|开启审批功能\| \|is\_show\_trash \| global \| boolean\|
+false\|显示回收站\| \|enable\_floatingip\_bandwidth\| global \|
+boolean\| true \|开启floatingip带宽\| \|logo\_url \| global \| string
+\|/static/assets/nav\_logo.png\|logo图片地址\| \|favicon \| global \|
+string \|/static/assets/favicon.ico\|浏览器tab 小图标\| \|title \|
+global \| string \|UnitedStack 有云\|浏览器tab 标题\|
+\|default\_image\_url \| global \| string \| \|默认 image 图片，
+图片大小为40\*40\| \|enable\_charge \| global \| boolean\| true
+\|开启计费功能\| \|enable\_object\_storage \| global \| boolean\| true
+\|开启对象存储功能\| \|enable\_alarm \| global \| boolean\| true
+\|监控报警开关\| \|enable\_ldap \| global \| boolean\| false\|LDAP开关\|
+\|calamari\_url \| calamari \| string \| \|ceph 面板 url\| \|view.css \|
+ticket \| text \| \|工单页面-样式定制\| \|view.css \| approval \| text
+\| \|审批面板-样式定制\| \|appliable\_volume\_types \| approval \|
+string \|["ssd", "capacity"]\|审批面板-允许申请的云硬盘类型\|
+\|enable\_apply\_instance\_credential\| approval \| boolean\| true
+\|审批面板-允许用户设置虚拟机密码\| \|enable\_apply\_instance\_name \|
+approval \| boolean\| true \|审批面板-允许用户设置虚拟机密码\|
+\|server\_name\_prefix \| approval \| string \| op
+\|审批面板-虚拟机名称前缀\| \|send\_notification\_email \| approval \|
+boolean\| true \|审批发送通知邮件\| \|total\_gigabytes \| dashboard \|
+number \| 5000 \|dashboard页面-云硬盘最大总容量\|
+\|max\_single\_gigabytes \| dashboard \| number \| 1000
+\|dashboard页面-单个云硬盘最大容量\| \|is\_show\_vlan \| dashboard \|
+boolean\| true \|dashboard页面-显示 vlan\| \|max\_floatingip\_bandwidth
+\| dashboard \| number \| 30 \|dashboard页面-最大 floatingip 带宽\|
+\|listener\_max\_connection \| dashboard \| number \|
+40000\|dashboard页面-最大监听器数量\| \|view.css \| dashboard \| text \|
+\|dashboard页面-定制样式\| \|enable\_ipsec \| dashboard \| boolean\|
+true \|dashboard页面-开启 ipsec\| \|enable\_dashboard\_alarm \|
+dashboard \| boolean\| true \|监控报警开关\|
+\|enable\_router\_portforwarding\| dashboard \| boolean\| true
+\|dashboard页面-路由端口转发开关\| \|commercial\_storage \| admin \|
+number \| 0 \|管理页面-商业存储总容量\| \|view.css \| admin \| text \|
+\|管理页面-样式定制\| \|view.css \| bill \| text \|
+\|计费页面-样式定制\| \|min\_recharge\_amount \| bill \| number \| 10
+\|最小充值金额\| \|enable\_paypal \| bill \| boolean\| true \|开启
+Paypal\| \|enable\_alipay \| bill \| boolean\| true \|开启支付宝\|
+\|view.css \| storage \| text \| \|对象存储-样式定制\|
+
+通过设置配置管理的相关选项，可以选择在控制台开启不同的服务或者在页面呈现不同的效果。让客户按照需求可以灵活更改控制台面板，实现按需定制。

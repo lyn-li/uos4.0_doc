@@ -8,7 +8,6 @@
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 2
 
    组建简单私有网络
    快速创建云主机
